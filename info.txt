@@ -1,0 +1,26 @@
+Concrètement, le problème que vous allez résoudre avec ce dataset (le jeu de données « Give Me Some Credit » ou « Financial Distress Prediction ») est un problème de classification multiclasse ou binaire visant à prédire la détresse financière.
+Voici les détails précis de la problématique et de sa résolution :
+1. Définition du problème de détresse financière
+La détresse financière survient lorsqu'une entité (particulier ou entreprise) rencontre des diﬃcultés majeures pour honorer ses obligations financières, souvent à cause d'une baisse de rentabilité, de problèmes de trésorerie ou d'un endettement insoutenable. Votre objectif est de construire un modèle capable de prédire si une personne subira une telle défaillance dans les deux prochaines années [Statement utilisateur].
+2. L'objectif métier (Business Understanding)
+L'intérêt de cette étude est double :
+• Pour les prêteurs : Identifier les profils à risque pour prendre des décisions de crédit éclairées et réduire les pertes liées aux impayés.
+• Pour les emprunteurs : Leur fournir un outil pour évaluer leur santé financière et prendre les meilleures décisions afin d'éviter la faillite [Statement utilisateur].
+
+ Voici le récapitulatif des variables du dataset Kaggle que nous allons utiliser pour prédire la détresse financière. Pour respecter la consigne de 10 colonnes maximum, j'ai inclus la variable cible et sélectionné les 9 caractéristiques les plus pertinentes.
+1. La Variable Cible (Target)
+• SeriousDlqin2yrs : C'est notre étiquette de classification. Elle indique si l'emprunteur a connu un incident de paiement grave (90 jours de retard ou plus) au cours des deux dernières années [Statement utilisateur, 2615].
+    ◦ Pour Naive Bayes : C'est la classe à prédire (0 = Sain, 1 = En détresse).
+    ◦ Pour le R-learning : C'est ce qui déterminera notre récompense (+1 pour une prédiction correcte, -1 pour une erreur).
+2. Les Variables Explicatives (Features)
+Ces 9 colonnes serviront d'espace d'états pour notre agent de renforcement et de descripteurs pour notre classifieur :
+1. RevolvingUtilizationOfUnsecuredLines : Solde total sur les cartes de crédit et lignes de crédit personnelles (hors immobilier) divisé par la somme des limites de crédit [Statement utilisateur].
+2. age : Âge de l'emprunteur en années [Statement utilisateur].
+3. NumberOfTime30-59DaysPastDueNotWorse : Nombre de fois où l'emprunteur a eu entre 30 et 59 jours de retard de paiement au cours des 2 dernières années [Statement utilisateur].
+4. DebtRatio : Ratio d'endettement (paiements mensuels de dettes, pensions, frais de subsistance divisés par le revenu mensuel brut) [Statement utilisateur].
+5. MonthlyIncome : Revenu mensuel de l'emprunteur [Statement utilisateur].
+6. NumberOfOpenCreditLinesAndLoans : Nombre de prêts ouverts (prêts auto, hypothèques) et de lignes de crédit (cartes de crédit) [Statement utilisateur].
+7. NumberOfTimes90DaysLate : Nombre de fois où l'emprunteur a eu un retard de paiement de 90 jours ou plus [Statement utilisateur].
+8. NumberRealEstateLoansOrLines : Nombre de prêts hypothécaires et de lignes de crédit sur valeur domiciliaire [Statement utilisateur].
+9. NumberOfTime60-89DaysPastDueNotWorse : Nombre de fois où l'emprunteur a eu entre 60 et 89 jours de retard de paiement au cours des 2 dernières années [Statement utilisateur].
+10. NumberOfDependents : Le nombre de personnes à charge dans la famille, excluant l'emprunteur lui-même (conjoint, enfants, etc.) 
