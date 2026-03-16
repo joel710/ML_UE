@@ -1,4 +1,4 @@
-Concrètement, le problème que vous allez résoudre avec ce dataset (le jeu de données « Give Me Some Credit » ou « Financial Distress Prediction ») est un problème de classification multiclasse ou binaire visant à prédire la détresse financière.
+Concrètement, le problème que nous allons résoudre avec ce dataset (le jeu de données « Give Me Some Credit ») est un problème de classification  binaire visant à prédire la détresse financière.
 Voici les détails précis de la problématique et de sa résolution :
 1. Définition du problème de détresse financière
 La détresse financière survient lorsqu'une entité (particulier ou entreprise) rencontre des diﬃcultés majeures pour honorer ses obligations financières, souvent à cause d'une baisse de rentabilité, de problèmes de trésorerie ou d'un endettement insoutenable. Votre objectif est de construire un modèle capable de prédire si une personne subira une telle défaillance dans les deux prochaines années [Statement utilisateur].
