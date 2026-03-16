@@ -298,13 +298,11 @@ pip install pandas numpy matplotlib seaborn scikit-learn
 
 ## 💡 Notes Importantes
 
-⚠️ **Attention**: Le chemin du fichier CSV doit être modifié selon votre configuration locale.
 
-💾 **Sauvegarde**: Les modèles sont automatiquement sauvegardés en format pickle.
 
 🎨 **Visualisations**: Toutes les figures sont générées automatiquement avec matplotlib/seaborn.
 
-⏱️ **Temps d'exécution**: Comptez environ 5-10 minutes pour l'exécution complète du notebook.
+⏱️ **Temps d'exécution**: Comptez environ 5-15 minutes pour l'exécution complète du notebook.
 
 🔧 **Personnalisation**: Tous les hyperparamètres sont facilement modifiables dans le code.
 
@@ -312,6 +310,6 @@ pip install pandas numpy matplotlib seaborn scikit-learn
 
 **Date de création**: 2026-01-20
 **Version**: 1.0
-**Auteur**: Assistant IA
+**Auteur**: Groupe 1 ( ADZONYA , EKLOU, DZAHINI, OKOUMASSOU)
 
 ---
