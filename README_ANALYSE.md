@@ -10,7 +10,7 @@ J'ai créé un nouveau notebook complet qui combine les deux approches d'apprent
 1. **Naive Bayes** (Classification probabiliste)
 2. **R-Learning** (Apprentissage par renforcement)
 
-Le fichier créé: `analyse_complete_detresse_financiere.ipynb`
+Le fichier créé: `Final_ML.ipynb`
 
 ---
 
